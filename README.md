@@ -13,7 +13,7 @@ vulnerable code
 
 
 * snprintf(cmd_to_execute,0x100,"ping %s -c 4 -I %s -w 5 %s > /tmp/ping.tmp",param,interface_name,target_addr);
-* bin/sh cmd_to_execute
+
 
 Here we can supply the "target_addr" with  "; payload"
 
