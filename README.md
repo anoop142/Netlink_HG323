@@ -60,6 +60,10 @@ Buffer overflow in login form, Great!. One hell of a secure router!.
 
 curl http://192.168.1.1/boaform/admin/formLogin_en  --data-raw 'username=AAAAAAAAAA.....&psd=blah'
 
+This would crash the router.
+Easiest way to leverage this buffer overflow to use 'saveconfig" funtion,
+which will get the "last_good.xml', then login and enable shell or whatever.
+
 
 
 
